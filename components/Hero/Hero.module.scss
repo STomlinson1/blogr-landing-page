@@ -1,0 +1,32 @@
+@use '../../styles/abstracts' as *;
+
+.Hero {
+	height: 80vh;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	background-image: url("../../public/images/bg-pattern-intro.svg"),
+		linear-gradient(90deg, $lighter-red, $light-red);
+	background-position: 20% 52%;
+	background-size: 205%, contain;
+	color: $white;
+	border-bottom-left-radius: 20%;
+
+	h1 {
+		font-size: $heading-large;
+	}
+
+	p {
+		font-size: $fontsize-medium;
+	}
+
+	.buttonGroup {
+		display: flex;
+		justify-content: space-between;
+		width: 200px;
+		margin-top: 1.5rem;
+	}
+}

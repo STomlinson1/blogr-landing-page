@@ -2,15 +2,18 @@
 
 .Navbar {
 	font-family: 'Ubuntu';
-	height: 70px;
+	height: 90px;
 	max-width: $container-width;
 	display: flex;
 	flex-direction: row;
-	position: sticky;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 	padding: 0 3rem;
+	z-index: 10;
 	margin: 0 auto;
 	color: $white;
-	background-color: red;
 
 	.group {
 		height: 100%;
