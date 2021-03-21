@@ -1,0 +1,30 @@
+@use '../../styles/abstracts' as *;
+
+.Button {
+	font-size: $fontsize-medium;
+	border: 1px solid $white;
+	border-radius: 25px;
+	padding: 10px 20px;
+}
+
+.primary {
+	color: $white;
+
+	&:hover {
+		cursor: pointer;
+		background-color: $white;
+		color: $primary;
+	}
+}
+
+.secondary {
+	color: $primary;
+	background-color: $white;
+
+	&:hover {
+		cursor: pointer;
+		background-color: $primary-light;
+		border-color: $primary-light;
+		color: $white;
+	}
+}
