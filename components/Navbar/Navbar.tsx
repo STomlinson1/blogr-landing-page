@@ -2,28 +2,23 @@ import styles from './Navbar.module.scss';
 import Image from 'next/image';
 
 import Button from '../Button/Button';
+import NavItem from '../NavItem/NavItem';
 
 const Navbar = () => {
 	return (
 		<nav className={styles.Navbar}>
 			<ul className={styles.group}>
-				<li>
+				<li className={styles.logo}>
 					<Image
 						src="/../public/images/logo.svg"
 						alt="Blogr logo"
-						width={80}
+						width={85}
 						height={35}
 					/>
 				</li>
-				<li>
-					<a>Product</a>
-				</li>
-				<li>
-					<a>Company</a>
-				</li>
-				<li>
-					<a>Connect</a>
-				</li>
+				<NavItem text="Product" />
+				<NavItem text="Company" />
+				<NavItem text="Connect" />
 			</ul>
 
 			<ul className={`${styles.group} ${styles.groupRight}`}>

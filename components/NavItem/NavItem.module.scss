@@ -1,0 +1,10 @@
+.NavItem {
+	.arrow {
+		display: inline-block;
+		margin-left: 6px;
+	}
+
+	.open {
+		transform: rotate(180deg) translateY(-3px);
+	}
+}
