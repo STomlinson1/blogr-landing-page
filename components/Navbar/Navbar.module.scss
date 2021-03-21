@@ -1,0 +1,34 @@
+@use '../../styles/abstracts' as *;
+
+.Navbar {
+	font-family: 'Ubuntu';
+	height: 70px;
+	max-width: $container-width;
+	display: flex;
+	flex-direction: row;
+	position: sticky;
+	padding: 0 3rem;
+	margin: 0 auto;
+	color: $white;
+	background-color: red;
+
+	.group {
+		height: 100%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		list-style: none;
+
+		li {
+			margin-right: 3rem;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.groupRight {
+		margin-left: auto;
+	}
+}

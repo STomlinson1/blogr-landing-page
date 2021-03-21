@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import HomeLayout from '../components/Layouts/HomeLayout';
 
 export default function Home() {
 	return (
@@ -7,7 +8,9 @@ export default function Home() {
 				<title>Create Next App</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<h1>Blogr Landing Page</h1>
+			<HomeLayout>
+				<h1>Blogr Landing Page</h1>
+			</HomeLayout>
 		</div>
 	);
 }
