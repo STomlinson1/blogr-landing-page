@@ -1,6 +1,8 @@
 import styles from './Navbar.module.scss';
 import Image from 'next/image';
 
+import Button from '../Button/Button';
+
 const Navbar = () => {
 	return (
 		<nav className={styles.Navbar}>
@@ -13,14 +15,24 @@ const Navbar = () => {
 						height={35}
 					/>
 				</li>
-				<li>Product</li>
-				<li>Company</li>
-				<li>Connect</li>
+				<li>
+					<a>Product</a>
+				</li>
+				<li>
+					<a>Company</a>
+				</li>
+				<li>
+					<a>Connect</a>
+				</li>
 			</ul>
 
 			<ul className={`${styles.group} ${styles.groupRight}`}>
-				<li>Login</li>
-				<li>SignUp</li>
+				<li>
+					<a>Login</a>
+				</li>
+				<li>
+					<Button text="Sign Up" variant="secondary" />
+				</li>
 			</ul>
 		</nav>
 	);
