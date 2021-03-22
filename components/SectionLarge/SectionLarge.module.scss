@@ -3,11 +3,46 @@
 .Section {
 	min-height: 90vh;
 	position: relative;
+	background-image: url("../../public/images/illustration-editor-desktop.svg");
+	background-repeat: no-repeat;
+	background-size: 65%, contain;
+	background-position: 150% 50%;
 	@include main-container;
+
+	@media screen and (min-width: 900px) {
+		background-size: 60%, contain;
+		background-position: 140% 50%;
+	}
+
+	// @media screen and (min-width: 1280px) {
+	// 	background-size: 750px;
+	// 	background-position: 145% 50%;
+	// }
+
+	.container {
+		margin-top: 5rem;
+	}
 
 	.header {
 		font-size: $heading-medium;
 		text-align: center;
 		color: $secondary;
+		padding-top: 7rem;
+	}
+
+	.content {
+		margin-bottom: 2rem;
+		max-width: 31rem;
+
+		h3 {
+			font-size: $heading-small;
+			color: $secondary;
+		}
+
+		p {
+			margin-top: 1rem;
+			font-size: $fontsize-medium;
+			color: $dark-gray;
+		}
 	}
 }

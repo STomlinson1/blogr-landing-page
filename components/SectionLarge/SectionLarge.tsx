@@ -5,8 +5,8 @@ const SectionLarge = () => {
 		<section className={styles.Section}>
 			<h2 className={styles.header}>Designed for the future</h2>
 			<div>
-				<div>
-					<article>
+				<div className={styles.container}>
+					<article className={styles.content}>
 						<h3>Introducing an extensible editor</h3>
 						<p>
 							Blogr features an exceedingly intuitive interface which lets you focus
@@ -16,7 +16,7 @@ const SectionLarge = () => {
 							easy ways to add functionality or cange the looks of a blog.
 						</p>
 					</article>
-					<article>
+					<article className={styles.content}>
 						<h3>Robust content management</h3>
 						<p>
 							Flexible content management enables users to easily move through posts.
