@@ -13,16 +13,18 @@
 	z-index: 10;
 	color: $white;
 
+	.logo {
+		margin: auto 0;
+		margin-right: 4rem;
+		width: 85px;
+	}
+
 	.group {
 		height: 100%;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		list-style: none;
-
-		.logo {
-			margin-right: 4rem;
-		}
 
 		li {
 			margin-right: 2rem;

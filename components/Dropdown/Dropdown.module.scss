@@ -1,0 +1,25 @@
+@use '../../styles/abstracts' as *;
+
+.Dropdown {
+	background-color: $white;
+	color: $secondary;
+	position: absolute;
+	top: 3rem;
+	left: 0;
+	z-index: 10;
+	min-width: 125px;
+	padding: 1rem;
+	border-radius: 10px;
+
+	li {
+		margin-bottom: 1rem;
+
+		&:nth-last-child(1) {
+			margin-bottom: 0;
+		}
+	}
+
+	a:hover {
+		border-bottom: 1px solid black;
+	}
+}

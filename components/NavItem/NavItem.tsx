@@ -11,7 +11,11 @@ const NavItem: React.FC<NavItemProps> = ({ text, children }) => {
 	const [ show, setShow ] = useState(false);
 
 	return (
-		<li className={styles.NavItem} onClick={(e) => setShow(!show)}>
+		<li
+			className={styles.NavItem}
+			onMouseEnter={(e) => setShow(true)}
+			onMouseLeave={(e) => setShow(false)}
+		>
 			<a>{text}</a>
 			<div className={`${styles.arrow} ${show ? styles.open : ''}`}>
 				<Image src="/images/icon-arrow-light.svg" width={10} height={8} />
