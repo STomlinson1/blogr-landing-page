@@ -39,3 +39,8 @@
 		margin-left: auto;
 	}
 }
+
+.active {
+	// background-color: $lighter-red;
+	background: linear-gradient(90deg, $lighter-red, $light-red);
+}

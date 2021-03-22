@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import styles from './Navbar.module.scss';
 import Image from 'next/image';
 
@@ -6,8 +7,21 @@ import NavItem from '../NavItem/NavItem';
 import Dropdown from '../Dropdown/Dropdown';
 
 const Navbar = () => {
+	const [ scrollPosition, setScrollPosition ] = useState(0);
+
+	const handleScroll = () => {
+		const position = window.pageYOffset;
+		setScrollPosition(position);
+	};
+
+	useEffect(() => {
+		window.addEventListener('scroll', handleScroll, { passive: true });
+
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, []);
+
 	return (
-		<nav className={styles.Navbar}>
+		<nav className={`${styles.Navbar} ${scrollPosition > 350 ? styles.active : ''}`}>
 			<div className={styles.logo}>
 				<Image
 					src="/images/logo.svg"
