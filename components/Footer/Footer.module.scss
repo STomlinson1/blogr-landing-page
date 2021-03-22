@@ -4,8 +4,42 @@
 	border-top-right-radius: 130px;
 	background-color: $black-blue;
 	color: $white;
+	padding: 3rem 0;
 
 	.container {
 		@include main-container;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+
+		@media screen and (min-width: 700px) {
+			align-items: initial;
+			flex-direction: row;
+			justify-content: space-around;
+			text-align: left;
+		}
+	}
+
+	.logo {
+		width: 80px;
+		margin-bottom: 2rem;
+	}
+
+	ul {
+		width: 80px;
+
+		li {
+			margin-bottom: 8px;
+
+			&:nth-child(1) {
+				margin-bottom: 1rem;
+				font-weight: 600;
+			}
+
+			&:nth-last-child(1) {
+				margin-bottom: 2.5rem;
+			}
+		}
 	}
 }
