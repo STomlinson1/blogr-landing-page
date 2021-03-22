@@ -1,11 +1,11 @@
 @use '../../styles/abstracts' as *;
 
 .Section {
+	padding-top: 7rem;
 	min-height: 90vh;
 	position: relative;
 
 	@media screen and (min-width: 810px) {
-		background-image: url("../../public/images/illustration-editor-desktop.svg");
 		background-repeat: no-repeat;
 		background-size: 62%, contain;
 		background-position: 150% 50%;
@@ -30,7 +30,7 @@
 		font-size: $heading-medium;
 		text-align: center;
 		color: $secondary;
-		padding-top: 7rem;
+		padding: 0 1rem;
 	}
 
 	.container {
@@ -43,7 +43,7 @@
 
 	.img {
 		max-width: 500px;
-		margin: 2rem auto;
+		margin: 1.5rem auto;
 
 		@media screen and (min-width: 810px) {
 			display: none;
@@ -70,5 +70,17 @@
 			width: 50%;
 			text-align: left;
 		}
+	}
+}
+
+.editor {
+	@media screen and (min-width: 810px) {
+		background-image: url("../../public/images/illustration-editor-desktop.svg");
+	}
+}
+
+.laptop {
+	@media screen and (min-width: 810px) {
+		background-image: url("../../public/images/illustration-laptop-desktop.svg");
 	}
 }
