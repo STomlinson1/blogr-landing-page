@@ -1,0 +1,66 @@
+@use '../../styles/abstracts' as *;
+
+.Section {
+	background-image: url("../../public/images/bg-pattern-circles.svg"),
+		linear-gradient(90deg, $dark-gray-blue, $dark-desaturated-blue);
+	background-repeat: no-repeat;
+	background-position: 50% -50%;
+	background-size: 100%, contain;
+	color: $white;
+	border-radius: 0 130px;
+	margin-top: 12rem;
+
+	@media screen and (min-width: 810px) {
+		margin-top: 0;
+		background-position: 10% 100%;
+		background-size: 50%, contain;
+	}
+
+	.container {
+		position: relative;
+		@include main-container;
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	.img {
+		position: absolute;
+		width: 375px;
+		top: -175px;
+		left: 50%;
+		transform: translateX(-50%);
+
+		@media screen and (min-width: 810px) {
+			width: 50%;
+			top: -70px;
+			left: 0;
+			transform: none;
+		}
+	}
+
+	.content {
+		width: 100%;
+		min-height: 450px;
+		margin-bottom: 2rem;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 6rem;
+
+		h2 {
+			font-size: $heading-medium;
+		}
+
+		p {
+			margin-top: 1rem;
+			font-size: $fontsize-medium;
+		}
+
+		@media screen and (min-width: 810px) {
+			margin-top: 0;
+			width: 50%;
+			text-align: left;
+		}
+	}
+}

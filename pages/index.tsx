@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import HomeLayout from '../components/Layouts/HomeLayout';
-import { Hero, ContentLarge } from '../components';
+import { Hero, ContentLarge, ContentSmall } from '../components';
 import { Fragment } from 'react';
 
 const articles = [
@@ -16,6 +16,12 @@ const articles = [
 	}
 ];
 
+const smallContent = {
+	heading: 'State of the Art Infrastucture',
+	text:
+		'With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.'
+};
+
 export default function Home() {
 	return (
 		<Fragment>
@@ -26,6 +32,7 @@ export default function Home() {
 			<HomeLayout>
 				<Hero />
 				<ContentLarge heading="Designed for the future" articles={articles} />
+				<ContentSmall {...smallContent} />
 			</HomeLayout>
 		</Fragment>
 	);
