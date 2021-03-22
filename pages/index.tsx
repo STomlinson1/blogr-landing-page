@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import HomeLayout from '../components/Layouts/HomeLayout';
-import { Hero } from '../components';
+import { Hero, SectionLarge } from '../components';
 
 export default function Home() {
 	return (
@@ -11,6 +11,7 @@ export default function Home() {
 			</Head>
 			<HomeLayout>
 				<Hero />
+				<SectionLarge/>
 			</HomeLayout>
 		</>
 	);

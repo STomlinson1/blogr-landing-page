@@ -1,18 +1,16 @@
 @use '../../styles/abstracts' as *;
 
 .Navbar {
+	@include main-container;
 	font-family: 'Ubuntu';
 	height: 90px;
-	max-width: $container-width;
 	display: flex;
 	flex-direction: row;
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
-	padding: 0 3rem;
 	z-index: 10;
-	margin: 0 auto;
 	color: $white;
 
 	.group {

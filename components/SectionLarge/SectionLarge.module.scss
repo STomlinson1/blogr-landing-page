@@ -1,0 +1,13 @@
+@use '../../styles/abstracts' as *;
+
+.Section {
+	min-height: 90vh;
+	position: relative;
+	@include main-container;
+
+	.header {
+		font-size: $heading-medium;
+		text-align: center;
+		color: $secondary;
+	}
+}
