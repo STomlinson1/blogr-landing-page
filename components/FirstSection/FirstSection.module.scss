@@ -26,11 +26,6 @@
 		background-position: 100% 50%;
 	}
 
-	.container {
-		@include main-container;
-		margin-top: 5rem;
-	}
-
 	.header {
 		font-size: $heading-medium;
 		text-align: center;
@@ -38,9 +33,27 @@
 		padding-top: 7rem;
 	}
 
+	.container {
+		@include main-container;
+
+		@media screen and (min-width: 810px) {
+			margin-top: 5rem;
+		}
+	}
+
+	.img {
+		max-width: 500px;
+		margin: 2rem auto;
+
+		@media screen and (min-width: 810px) {
+			display: none;
+		}
+	}
+
 	.content {
+		width: 100%;
 		margin-bottom: 2rem;
-		width: 50%;
+		text-align: center;
 
 		h3 {
 			font-size: $heading-small;
@@ -51,6 +64,11 @@
 			margin-top: 1rem;
 			font-size: $fontsize-medium;
 			color: $dark-gray;
+		}
+
+		@media screen and (min-width: 810px) {
+			width: 50%;
+			text-align: left;
 		}
 	}
 }
