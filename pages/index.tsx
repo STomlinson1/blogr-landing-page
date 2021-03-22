@@ -4,7 +4,7 @@ import { Hero } from '../components';
 
 export default function Home() {
 	return (
-		<div>
+		<>
 			<Head>
 				<title>Blogr | Home</title>
 				<link rel="icon" href="/favicon.ico" />
@@ -12,6 +12,6 @@ export default function Home() {
 			<HomeLayout>
 				<Hero />
 			</HomeLayout>
-		</div>
+		</>
 	);
 }

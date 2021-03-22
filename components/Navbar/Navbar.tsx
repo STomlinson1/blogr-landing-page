@@ -9,12 +9,7 @@ const Navbar = () => {
 		<nav className={styles.Navbar}>
 			<ul className={styles.group}>
 				<li className={styles.logo}>
-					<Image
-						src="/../public/images/logo.svg"
-						alt="Blogr logo"
-						width={85}
-						height={35}
-					/>
+					<Image src="/images/logo.svg" alt="Blogr logo" width={85} height={35} />
 				</li>
 				<NavItem text="Product" />
 				<NavItem text="Company" />

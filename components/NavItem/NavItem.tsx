@@ -14,7 +14,7 @@ const NavItem: React.FC<NavItemProps> = ({ text, children }) => {
 		<li className={styles.NavItem} onClick={(e) => setShow(!show)}>
 			<a>{text}</a>
 			<div className={`${styles.arrow} ${show ? styles['open'] : ''}`}>
-				<Image src="/../public/images/icon-arrow-light.svg" width={10} height={8} />
+				<Image src="/images/icon-arrow-light.svg" width={10} height={8} />
 			</div>
 			{show && children}
 		</li>
