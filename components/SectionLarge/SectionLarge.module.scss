@@ -3,23 +3,31 @@
 .Section {
 	min-height: 90vh;
 	position: relative;
-	background-image: url("../../public/images/illustration-editor-desktop.svg");
-	background-repeat: no-repeat;
-	background-size: 65%, contain;
-	background-position: 150% 50%;
-	@include main-container;
 
-	@media screen and (min-width: 900px) {
-		background-size: 60%, contain;
-		background-position: 140% 50%;
+	@media screen and (min-width: 810px) {
+		background-image: url("../../public/images/illustration-editor-desktop.svg");
+		background-repeat: no-repeat;
+		background-size: 62%, contain;
+		background-position: 150% 50%;
 	}
 
-	// @media screen and (min-width: 1280px) {
-	// 	background-size: 750px;
-	// 	background-position: 145% 50%;
-	// }
+	@media screen and (min-width: 1280px) {
+		background-size: 750px;
+		background-position: 120% 50%;
+	}
+
+	@media screen and (min-width: 1500px) {
+		background-size: 800px;
+		background-position: 110% 50%;
+	}
+
+	@media screen and (min-width: 1700px) {
+		background-size: 800px;
+		background-position: 100% 50%;
+	}
 
 	.container {
+		@include main-container;
 		margin-top: 5rem;
 	}
 
@@ -32,7 +40,7 @@
 
 	.content {
 		margin-bottom: 2rem;
-		max-width: 31rem;
+		width: 50%;
 
 		h3 {
 			font-size: $heading-small;

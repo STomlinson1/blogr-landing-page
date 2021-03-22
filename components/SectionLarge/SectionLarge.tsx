@@ -1,11 +1,12 @@
 import styles from './SectionLarge.module.scss';
+import Image from 'next/image';
 
 const SectionLarge = () => {
 	return (
 		<section className={styles.Section}>
 			<h2 className={styles.header}>Designed for the future</h2>
-			<div>
-				<div className={styles.container}>
+			<div className={styles.container}>
+				<div>
 					<article className={styles.content}>
 						<h3>Introducing an extensible editor</h3>
 						<p>
