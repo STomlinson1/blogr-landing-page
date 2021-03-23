@@ -1,17 +1,24 @@
 @use '../../styles/abstracts' as *;
 
 .Navbar {
-	@include main-container;
+	// @include main-container;
 	font-family: 'Ubuntu';
 	height: 90px;
-	display: flex;
-	flex-direction: row;
+	// display: flex;
+	// flex-direction: row;
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	z-index: 10;
 	color: $white;
+
+	.container {
+		display: flex;
+		flex-direction: row;
+		height: 100%;
+		@include main-container;
+	}
 
 	.logo {
 		margin: auto 0;
@@ -21,7 +28,7 @@
 
 	.group {
 		height: 100%;
-		display: flex;
+		display: none;
 		flex-direction: row;
 		align-items: center;
 		list-style: none;
@@ -33,10 +40,28 @@
 				margin-right: 0;
 			}
 		}
+
+		@media screen and (min-width: 810px) {
+			display: flex;
+		}
 	}
 
 	.groupRight {
 		margin-left: auto;
+	}
+
+	.menuIcon {
+		margin: auto 0;
+		margin-left: auto;
+		width: 30px;
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		@media screen and (min-width: 810px) {
+			display: none;
+		}
 	}
 }
 
