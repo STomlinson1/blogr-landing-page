@@ -1,3 +1,7 @@
+Blogr landing page developed with Next.js, TypeScript, and Sass.
+
+Live version can be found [here](https://blogr-landing-page-psi.vercel.app/)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
