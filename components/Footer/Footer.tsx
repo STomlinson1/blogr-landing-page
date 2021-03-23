@@ -66,7 +66,9 @@ const Footer = () => {
 					</li>
 				</ul>
 			</div>
-			<p className={styles.signature}>Copyright &copy; 2021, Stephon Tomlinson</p>
+			<p className={styles.signature}>
+				Copyright &copy; 2021, Developed by Stephon Tomlinson
+			</p>
 		</footer>
 	);
 };
