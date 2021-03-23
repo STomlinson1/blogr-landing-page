@@ -5,9 +5,10 @@ import styles from './NavItem.module.scss';
 
 interface NavItemProps {
 	text: string;
+	mobile?: boolean;
 }
 
-const NavItem: React.FC<NavItemProps> = ({ text, children }) => {
+const NavItem: React.FC<NavItemProps> = ({ text, children, mobile }) => {
 	const [ show, setShow ] = useState(false);
 
 	return (
@@ -18,7 +19,11 @@ const NavItem: React.FC<NavItemProps> = ({ text, children }) => {
 		>
 			<a>{text}</a>
 			<div className={`${styles.arrow} ${show ? styles.open : ''}`}>
-				<Image src="/images/icon-arrow-light.svg" width={10} height={8} />
+				{mobile ? (
+					<Image src="/images/icon-arrow-dark.svg" width={10} height={8} />
+				) : (
+					<Image src="/images/icon-arrow-light.svg" width={10} height={8} />
+				)}
 			</div>
 			{show && children}
 		</li>

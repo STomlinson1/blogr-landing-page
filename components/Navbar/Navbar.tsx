@@ -5,9 +5,11 @@ import Image from 'next/image';
 import Button from '../Button/Button';
 import NavItem from '../NavItem/NavItem';
 import Dropdown from '../Dropdown/Dropdown';
+import MobileNav from '../MobileNav/MobileNav';
 
 const Navbar = () => {
 	const [ scrollPosition, setScrollPosition ] = useState(0);
+	const [ showMobile, setShowMobile ] = useState(false);
 
 	const handleScroll = () => {
 		const position = window.pageYOffset;
@@ -56,16 +58,27 @@ const Navbar = () => {
 					</li>
 				</ul>
 
-				<div className={styles.menuIcon}>
-					<Image
-						src="/images/icon-hamburger.svg"
-						alt="Blogr logo"
-						width={50}
-						height={35}
-						layout="responsive"
-					/>
+				<div className={styles.menuIcon} onClick={(e) => setShowMobile(!showMobile)}>
+					{showMobile ? (
+						<Image
+							src="/images/icon-close.svg"
+							alt="Blogr logo"
+							width={50}
+							height={50}
+							layout="responsive"
+						/>
+					) : (
+						<Image
+							src="/images/icon-hamburger.svg"
+							alt="Blogr logo"
+							width={50}
+							height={35}
+							layout="responsive"
+						/>
+					)}
 				</div>
 			</div>
+			{showMobile && <MobileNav />}
 		</nav>
 	);
 };

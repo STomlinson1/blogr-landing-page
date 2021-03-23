@@ -1,0 +1,32 @@
+@use '../../styles/abstracts' as *;
+
+.MobileNav {
+	@include main-container;
+	margin: 0 2rem;
+	background-color: white;
+	color: $secondary;
+	border-radius: 10px;
+
+	@media screen and (min-width: 810px) {
+		display: none;
+	}
+
+	ul {
+		padding: 1rem 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	li {
+		margin-bottom: 0.75rem;
+		font-weight: 700;
+	}
+
+	.break {
+		width: 100%;
+		height: 1px;
+		background-color: $dark-gray;
+		opacity: 0.3;
+	}
+}

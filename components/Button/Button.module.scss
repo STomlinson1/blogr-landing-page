@@ -33,3 +33,15 @@
 		color: $white;
 	}
 }
+
+.mobile {
+	color: $white;
+	background: linear-gradient(90deg, $lighter-red, $light-red);
+
+	&:hover {
+		cursor: pointer;
+		color: $primary;
+		background: none;
+		border: 1px solid $primary;
+	}
+}

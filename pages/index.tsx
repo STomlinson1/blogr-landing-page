@@ -31,7 +31,7 @@ const sectionContent = {
 };
 
 const smallContent = {
-	heading: 'State of the Art Infrastucture',
+	heading: 'State of the Art Infrastructure',
 	text:
 		'With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.'
 };
