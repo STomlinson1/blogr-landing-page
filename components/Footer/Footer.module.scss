@@ -4,7 +4,7 @@
 	border-top-right-radius: 130px;
 	background-color: $black-blue;
 	color: $white;
-	padding: 3rem 0;
+	padding-top: 3rem;
 
 	.container {
 		@include main-container;
@@ -41,5 +41,10 @@
 				margin-bottom: 2.5rem;
 			}
 		}
+	}
+
+	.signature {
+		text-align: center;
+		padding-bottom: 0.5rem;
 	}
 }
